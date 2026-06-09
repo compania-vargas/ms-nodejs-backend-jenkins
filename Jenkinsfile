@@ -4,12 +4,12 @@ pipeline {
     }
 
     environment {
-        APELLIDO = "vargas" // Cambiar por apellido
-        ACR_NAME = "acrglobalcicd"
+        APELLIDO = "cvargas" // Cambiar por apellido
+        ACR_NAME = "acrglobalcicdcvargas"
         ACR_LOGIN_SERVER = "${ACR_NAME}.azurecr.io"
         IMAGE_NAME = "my-nodejs-app-${APELLIDO}"
         RESOURCE_GROUP = "rg-cicd-terraform-app-${APELLIDO}"
-        AKS_NAME = "aks-dev-eastus"
+        AKS_NAME = "aks-dev-eastus-cvargas"
     }
 
     stages {
